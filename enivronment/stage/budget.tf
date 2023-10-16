@@ -5,7 +5,7 @@ resource "aws_sns_topic" "budget_notification_topic" {
 resource "aws_sns_topic_subscription" "budget_notification_topic" {
   topic_arn = aws_sns_topic.budget_notification_topic.arn
   protocol  = "email"
-  endpoint  = "svetoslav.ekov01@gmail.com"
+  endpoint  = "zzzzzzzzz"
 }
 resource "aws_budgets_budget" "budget_notification_topic" {
   name              = "MonthlyBudget"
@@ -20,7 +20,7 @@ resource "aws_budgets_budget" "budget_notification_topic" {
     threshold                  = 1.0
     threshold_type             = "PERCENTAGE"
     notification_type          = "FORECASTED"
-    subscriber_email_addresses = ["svetoslav.ekov01@gmail.com"]
+    subscriber_email_addresses = ["zzzzzzzzzzz"]
   }
   notification {
     comparison_operator       = "GREATER_THAN"

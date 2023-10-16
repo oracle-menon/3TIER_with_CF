@@ -36,7 +36,7 @@ resource "aws_sns_topic" "monitoring_notification_topic" {
 resource "aws_sns_topic_subscription" "monitoring_notification_topic" {
   topic_arn = aws_sns_topic.monitoring_notification_topic.arn
   protocol  = "email"
-  endpoint  = "svetoslav.ekov01@gmail.com"
+  endpoint  = "zzzzzzzzz"
 }
 
 resource "aws_sns_topic_policy" "monitoring_notification_topic" {
